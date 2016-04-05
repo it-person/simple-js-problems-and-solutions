@@ -1,8 +1,13 @@
 ## Theoretical part
+
 https://api.jquery.com/parents/
+
 http://api.jquery.com/show/
+
 http://api.jquery.com/hide/
+
 http://api.jquery.com/html/
+
 http://api.jquery.com/on/
 
 
