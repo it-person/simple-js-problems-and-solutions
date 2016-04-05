@@ -18,7 +18,6 @@ required should be shown back
 ```javascript
   $(document).on('click', '.abilities div', function(event){
     curentType = $(event.target).html();
-    alert("hey! " + curentType)
     $(".rectangle").hide()
     $("."+curentType).parents('.rectangle').show()
   })
@@ -35,7 +34,6 @@ $( document ).ready(function() {
   $(".pokemon").click(renderProfile)
   $(document).on('click', '.abilities div', function(event){
     curentType = $(event.target).html();
-    alert("hey! " + curentType)
     if (displayedType == curentType) {
        $(".rectangle").show()
        displayedType = ''

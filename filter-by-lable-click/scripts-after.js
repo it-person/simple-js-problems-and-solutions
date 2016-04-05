@@ -1,9 +1,24 @@
+var displayedType = ''
+
 $( document ).ready(function() {
   for(var i=1; i<19; i++){
    renderPokemonFromAPI(i)
   }
   $(".pokemon").click(renderProfile)
+  $(document).on('click', '.abilities div', function(event){
+    curentType = $(event.target).html();
+    if (displayedType == curentType) {
+       $(".rectangle").show()
+       displayedType = ''
+    } else {
+      $(".rectangle").hide()
+      $("."+curentType).parents('.rectangle').show()
+      displayedType = curentType
+    }
+  })
 });
+
+
 var renderProfile = function(event){
   $("#rectangle-profile").html($(event.target).children(".hidden-info").html());
 }
