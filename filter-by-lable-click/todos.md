@@ -1,11 +1,20 @@
-#1. There should be a reaction when click on type label
+## Theoretical part
+https://api.jquery.com/parents/
+http://api.jquery.com/show/
+http://api.jquery.com/hide/
+http://api.jquery.com/html/
+http://api.jquery.com/on/
+
+
+## Practical part
+### 1. There should be a reaction when click on type label
 ```javascript
   $(document).on('click', '.abilities div', function(){
     alert("hey!")
   })
 ```
 
-#2. When click on type lable we need a type
+### 2. When click on type lable we need a type
 ```javascript
   $(document).on('click', '.abilities div', function(event){
     curentType = $(event.target).html();
@@ -13,7 +22,7 @@
   })
 ```
 
-#3. All the cards should be hidden and then all
+### 3. All the cards should be hidden and then all
 required should be shown back
 ```javascript
   $(document).on('click', '.abilities div', function(event){
@@ -23,7 +32,7 @@ required should be shown back
   })
 ```
 
-#4. When second click is fired on the same type label, all cards should be shown
+### 4. When second click is fired on the same type label, all cards should be shown
 ```javascript
 var displayedType = ''
 
